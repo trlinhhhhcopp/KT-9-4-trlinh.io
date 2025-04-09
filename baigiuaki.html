@@ -139,6 +139,24 @@
       .product-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .hamburger {
+        display: block;
+      }
+      #check:checked ~ .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        z-index: 999;
+      }
+      .menu {
+        display: none;
+      }
     }
 
     @media (max-width: 768px) {
